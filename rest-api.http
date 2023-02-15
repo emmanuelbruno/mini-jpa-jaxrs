@@ -1,0 +1,38 @@
+# Demo GET
+GET http://localhost:9998/minijparest/maisons
+###
+
+# Demo Query Param
+GET http://localhost:9998/minijparest/maisons/qp?mixAge=3&maxAge=5
+###
+
+# Demo Path Param
+GET http://localhost:9998/minijparest/maisons/pp/145
+###
+
+# Demo Header Param
+GET http://localhost:9998/minijparest/maisons/hp
+X-MY_PARAM: a parameter in the http request header
+###
+
+# Json Default serialisation in the response
+GET http://localhost:9998/minijparest/maisons/json
+Accept: application/json
+###
+
+# Des exemples avec une mini DAO tres simple
+GET http://localhost:9998/minijparest/maisons
+Accept: application/json
+###
+
+GET http://localhost:9998/minijparest/maisons/2
+Accept: application/json
+###
+
+PUT http://localhost:9998/minijparest/maisons
+Content-Type: application/json
+Accept: application/json
+
+{"surface":90,"name":"XYZ"}
+###
+
